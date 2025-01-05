@@ -1,0 +1,20 @@
+package com.criticalreview.pelicula.service;
+
+import org.springframework.stereotype.Service;
+
+import com.criticalreview.pelicula.model.Pelicula;
+
+import reactor.core.publisher.Flux;
+
+@Service
+public class PeliculaService {
+	
+	
+	Flux<Pelicula> obtenerPeliculas(){
+		return new Flux<Pelicula>peli=null;
+		
+		
+		
+	}
+
+}

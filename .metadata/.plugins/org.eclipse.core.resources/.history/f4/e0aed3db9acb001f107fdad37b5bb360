@@ -1,0 +1,5 @@
+package com.criticalreview.pelicula.service;
+
+public class PeliculaService {
+
+}

@@ -1,0 +1,816 @@
+2025-01-05 11:34:37,755 [Worker-9: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is out-of-date. Trying to update.
+2025-01-05 11:59:51,169 [Worker-19: Creating project "criticalview"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.criticalview:criticalview:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\criticalview\pom.xml.
+2025-01-05 12:05:33,817 [Worker-43: Creating project "businessdomain"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.criticalview:businessdomain:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\businessdomain\pom.xml.
+2025-01-05 12:06:03,705 [Worker-48: Creating project "businessdomain"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.criticalview:businessdomain:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\businessdomain\pom.xml.
+2025-01-05 12:10:48,010 [Worker-19: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.criticalview:criticalview:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\criticalview\pom.xml.
+2025-01-05 12:11:53,712 [Worker-43: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:935)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-05 12:14:58,477 [Worker-2: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-01-05 12:14:58,770 [Worker-4: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:935)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-05 12:17:44,929 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234 [635])
+2025-01-05 12:17:44,930 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234
+2025-01-05 12:17:44,931 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\aopalliance-1.0.jar
+2025-01-05 12:17:44,931 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\guice-5.1.0.jar
+2025-01-05 12:17:44,931 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpclient-4.5.14.jar
+2025-01-05 12:17:44,931 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpcore-4.4.16.jar
+2025-01-05 12:17:44,931 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jansi-2.4.0.jar
+2025-01-05 12:17:44,931 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jcl-over-slf4j-1.7.36.jar
+2025-01-05 12:17:44,931 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-artifact-3.9.6.jar
+2025-01-05 12:17:44,931 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-builder-support-3.9.6.jar
+2025-01-05 12:17:44,932 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-compat-3.9.6.jar
+2025-01-05 12:17:44,932 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-core-3.9.6.jar
+2025-01-05 12:17:44,932 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-embedder-3.9.6.jar
+2025-01-05 12:17:44,932 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-3.9.6.jar
+2025-01-05 12:17:44,932 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-builder-3.9.6.jar
+2025-01-05 12:17:44,932 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-plugin-api-3.9.6.jar
+2025-01-05 12:17:44,932 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-repository-metadata-3.9.6.jar
+2025-01-05 12:17:44,932 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-api-1.9.18.jar
+2025-01-05 12:17:44,932 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-connector-basic-1.9.18.jar
+2025-01-05 12:17:44,932 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-impl-1.9.18.jar
+2025-01-05 12:17:44,933 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-named-locks-1.9.18.jar
+2025-01-05 12:17:44,933 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-provider-3.9.6.jar
+2025-01-05 12:17:44,933 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-spi-1.9.18.jar
+2025-01-05 12:17:44,933 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-file-1.9.18.jar
+2025-01-05 12:17:44,933 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-http-1.9.18.jar
+2025-01-05 12:17:44,933 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-wagon-1.9.18.jar
+2025-01-05 12:17:44,933 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-util-1.9.18.jar
+2025-01-05 12:17:44,933 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-3.9.6.jar
+2025-01-05 12:17:44,933 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-builder-3.9.6.jar
+2025-01-05 12:17:44,933 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-shared-utils-3.3.4.jar
+2025-01-05 12:17:44,934 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.inject-0.9.0.M2.jar
+2025-01-05 12:17:44,934 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.plexus-0.9.0.M2.jar
+2025-01-05 12:17:44,934 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-build-api-0.0.7.jar
+2025-01-05 12:17:44,934 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-cipher-2.0.jar
+2025-01-05 12:17:44,934 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-classworlds-2.7.0.jar
+2025-01-05 12:17:44,934 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-component-annotations-2.1.0.jar
+2025-01-05 12:17:44,934 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-interpolation-1.26.jar
+2025-01-05 12:17:44,934 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-sec-dispatcher-2.0.jar
+2025-01-05 12:17:44,934 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-utils-3.5.1.jar
+2025-01-05 12:17:44,935 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-file-3.5.3.jar
+2025-01-05 12:17:44,935 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-3.5.3.jar
+2025-01-05 12:17:44,935 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-shared-3.5.3.jar
+2025-01-05 12:17:44,935 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-provider-api-3.5.3.jar
+2025-01-05 12:17:44,938 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.0.0.jre [14])
+2025-01-05 12:17:44,938 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\com.google.guava_33.0.0.jre.jar
+2025-01-05 12:17:44,938 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.12 [998])
+2025-01-05 12:17:44,938 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\slf4j.api_2.0.12.jar
+2025-01-05 12:17:44,939 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20091030 [1020])
+2025-01-05 12:17:44,939 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\javax.inject_1.0.0.v20091030.jar
+2025-01-05 12:17:44,939 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20200909-1856 [1019])
+2025-01-05 12:17:44,939 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\javax.annotation_1.3.5.v20200909-1856.jar
+2025-01-05 12:17:44,939 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.6.0 [75])
+2025-01-05 12:17:44,939 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.apache.commons.cli_1.6.0.jar
+2025-01-05 12:17:44,939 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [78])
+2025-01-05 12:17:44,939 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2025-01-05 12:17:44,939 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.lang3_3.17.0 [1279])
+2025-01-05 12:17:44,940 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.apache.commons.lang3_3.17.0.jar
+2025-01-05 12:17:44,940 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [15])
+2025-01-05 12:17:44,940 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\com.google.guava.failureaccess_1.0.2.jar
+2025-01-05 12:17:44,950 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\businessdomain":
+2025-01-05 12:17:44,954 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always install
+2025-01-05 12:17:45,138 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:935)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.readEnforcedJavaVersion(MavenLaunchDelegate.java:251)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.getVMInstall(MavenLaunchDelegate.java:224)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getBootpathExt(AbstractJavaLaunchConfigurationDelegate.java:363)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getVMSpecificAttributesMap(AbstractJavaLaunchConfigurationDelegate.java:679)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.getVMRunnerConfiguration(JavaLaunchDelegate.java:92)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:160)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.launch(MavenLaunchDelegate.java:133)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-05 12:17:45,145 [Worker-6: Launching Executing install in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:935)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.readEnforcedJavaVersion(MavenLaunchDelegate.java:251)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.getVMInstall(MavenLaunchDelegate.java:224)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.verifyVMInstall(AbstractJavaLaunchConfigurationDelegate.java:203)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getVMRunner(AbstractJavaLaunchConfigurationDelegate.java:1053)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.getVMRunner(MavenLaunchDelegate.java:154)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:175)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.launch(MavenLaunchDelegate.java:133)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-05 12:17:53,365 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2025-01-05 12:17:53,569 [main] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:935)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.readEnforcedJavaVersion(MavenLaunchDelegate.java:251)
+	at org.eclipse.m2e.ui.internal.launch.MavenJRETab.getDefaultJREDescriptor(MavenJRETab.java:73)
+	at org.eclipse.jdt.debug.ui.launchConfigurations.JavaJRETab.initializeFrom(JavaJRETab.java:197)
+	at org.eclipse.m2e.ui.internal.launch.MavenJRETab.initializeFrom(MavenJRETab.java:158)
+	at org.eclipse.debug.ui.AbstractLaunchConfigurationTabGroup.initializeFrom(AbstractLaunchConfigurationTabGroup.java:93)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupWrapper.initializeFrom(LaunchConfigurationTabGroupWrapper.java:182)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.displayInstanceTabs(LaunchConfigurationTabGroupViewer.java:869)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.lambda$4(LaunchConfigurationTabGroupViewer.java:733)
+	at org.eclipse.swt.custom.BusyIndicator.showWhile(BusyIndicator.java:67)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.inputChanged(LaunchConfigurationTabGroupViewer.java:748)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.setInput0(LaunchConfigurationTabGroupViewer.java:684)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationTabGroupViewer.setInput(LaunchConfigurationTabGroupViewer.java:664)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationPropertiesDialog.initializeContent(LaunchConfigurationPropertiesDialog.java:99)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.createContents(LaunchConfigurationsDialog.java:468)
+	at org.eclipse.jface.window.Window.create(Window.java:431)
+	at org.eclipse.jface.dialogs.Dialog.create(Dialog.java:1092)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.create(LaunchConfigurationsDialog.java:377)
+	at org.eclipse.jface.window.Window.open(Window.java:788)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationsDialog.open(LaunchConfigurationsDialog.java:1230)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchConfigurationPropertiesDialog.open(LaunchConfigurationPropertiesDialog.java:184)
+	at org.eclipse.debug.ui.DebugUITools.openLaunchConfigurationDialog(DebugUITools.java:711)
+	at org.eclipse.m2e.actions.ExecutePomAction.launch(ExecutePomAction.java:130)
+	at org.eclipse.m2e.actions.ExecutePomAction.launch(ExecutePomAction.java:101)
+	at org.eclipse.debug.internal.ui.launchConfigurations.LaunchShortcutExtension.launch(LaunchShortcutExtension.java:423)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runInternal(LaunchShortcutAction.java:99)
+	at org.eclipse.debug.internal.ui.actions.LaunchShortcutAction.runWithEvent(LaunchShortcutAction.java:146)
+	at org.eclipse.jface.action.ActionContributionItem.handleWidgetSelection(ActionContributionItem.java:581)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$4(ActionContributionItem.java:415)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1090)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1075)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:778)
+	at org.eclipse.jface.action.ActionContributionItem.lambda$8(ActionContributionItem.java:1206)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:89)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4274)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1066)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3660)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$5.run(PartRenderingEngine.java:1151)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1042)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:152)
+	at org.eclipse.ui.internal.Workbench.lambda$3(Workbench.java:639)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:339)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:546)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:173)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:152)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:208)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:143)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:109)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:439)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:271)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:651)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:588)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1459)
+2025-01-05 12:17:58,657 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234 [635])
+2025-01-05 12:17:58,657 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234
+2025-01-05 12:17:58,657 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\aopalliance-1.0.jar
+2025-01-05 12:17:58,657 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\guice-5.1.0.jar
+2025-01-05 12:17:58,657 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpclient-4.5.14.jar
+2025-01-05 12:17:58,657 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpcore-4.4.16.jar
+2025-01-05 12:17:58,658 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jansi-2.4.0.jar
+2025-01-05 12:17:58,658 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jcl-over-slf4j-1.7.36.jar
+2025-01-05 12:17:58,658 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-artifact-3.9.6.jar
+2025-01-05 12:17:58,658 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-builder-support-3.9.6.jar
+2025-01-05 12:17:58,658 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-compat-3.9.6.jar
+2025-01-05 12:17:58,658 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-core-3.9.6.jar
+2025-01-05 12:17:58,658 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-embedder-3.9.6.jar
+2025-01-05 12:17:58,658 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-3.9.6.jar
+2025-01-05 12:17:58,659 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-builder-3.9.6.jar
+2025-01-05 12:17:58,659 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-plugin-api-3.9.6.jar
+2025-01-05 12:17:58,659 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-repository-metadata-3.9.6.jar
+2025-01-05 12:17:58,659 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-api-1.9.18.jar
+2025-01-05 12:17:58,659 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-connector-basic-1.9.18.jar
+2025-01-05 12:17:58,659 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-impl-1.9.18.jar
+2025-01-05 12:17:58,659 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-named-locks-1.9.18.jar
+2025-01-05 12:17:58,659 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-provider-3.9.6.jar
+2025-01-05 12:17:58,659 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-spi-1.9.18.jar
+2025-01-05 12:17:58,660 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-file-1.9.18.jar
+2025-01-05 12:17:58,660 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-http-1.9.18.jar
+2025-01-05 12:17:58,660 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-wagon-1.9.18.jar
+2025-01-05 12:17:58,660 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-util-1.9.18.jar
+2025-01-05 12:17:58,660 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-3.9.6.jar
+2025-01-05 12:17:58,660 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-builder-3.9.6.jar
+2025-01-05 12:17:58,660 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-shared-utils-3.3.4.jar
+2025-01-05 12:17:58,660 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.inject-0.9.0.M2.jar
+2025-01-05 12:17:58,660 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.plexus-0.9.0.M2.jar
+2025-01-05 12:17:58,661 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-build-api-0.0.7.jar
+2025-01-05 12:17:58,661 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-cipher-2.0.jar
+2025-01-05 12:17:58,661 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-classworlds-2.7.0.jar
+2025-01-05 12:17:58,661 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-component-annotations-2.1.0.jar
+2025-01-05 12:17:58,661 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-interpolation-1.26.jar
+2025-01-05 12:17:58,661 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-sec-dispatcher-2.0.jar
+2025-01-05 12:17:58,661 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-utils-3.5.1.jar
+2025-01-05 12:17:58,661 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-file-3.5.3.jar
+2025-01-05 12:17:58,661 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-3.5.3.jar
+2025-01-05 12:17:58,661 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-shared-3.5.3.jar
+2025-01-05 12:17:58,661 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-provider-api-3.5.3.jar
+2025-01-05 12:17:58,662 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.0.0.jre [14])
+2025-01-05 12:17:58,662 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\com.google.guava_33.0.0.jre.jar
+2025-01-05 12:17:58,662 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.12 [998])
+2025-01-05 12:17:58,662 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\slf4j.api_2.0.12.jar
+2025-01-05 12:17:58,662 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20091030 [1020])
+2025-01-05 12:17:58,663 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\javax.inject_1.0.0.v20091030.jar
+2025-01-05 12:17:58,663 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20200909-1856 [1019])
+2025-01-05 12:17:58,663 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\javax.annotation_1.3.5.v20200909-1856.jar
+2025-01-05 12:17:58,663 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.6.0 [75])
+2025-01-05 12:17:58,663 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.apache.commons.cli_1.6.0.jar
+2025-01-05 12:17:58,663 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [78])
+2025-01-05 12:17:58,663 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2025-01-05 12:17:58,663 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.lang3_3.17.0 [1279])
+2025-01-05 12:17:58,664 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.apache.commons.lang3_3.17.0.jar
+2025-01-05 12:17:58,664 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [15])
+2025-01-05 12:17:58,664 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\com.google.guava.failureaccess_1.0.2.jar
+2025-01-05 12:17:58,665 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\businessdomain":
+2025-01-05 12:17:58,665 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean
+2025-01-05 12:17:58,671 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:935)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.readEnforcedJavaVersion(MavenLaunchDelegate.java:251)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.getVMInstall(MavenLaunchDelegate.java:224)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getBootpathExt(AbstractJavaLaunchConfigurationDelegate.java:363)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getVMSpecificAttributesMap(AbstractJavaLaunchConfigurationDelegate.java:679)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.getVMRunnerConfiguration(JavaLaunchDelegate.java:92)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:160)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.launch(MavenLaunchDelegate.java:133)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-05 12:17:58,675 [Worker-30: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:935)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.readEnforcedJavaVersion(MavenLaunchDelegate.java:251)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.getVMInstall(MavenLaunchDelegate.java:224)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.verifyVMInstall(AbstractJavaLaunchConfigurationDelegate.java:203)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getVMRunner(AbstractJavaLaunchConfigurationDelegate.java:1053)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.getVMRunner(MavenLaunchDelegate.java:154)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:175)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.launch(MavenLaunchDelegate.java:133)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-05 12:19:46,715 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234 [635])
+2025-01-05 12:19:46,715 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234
+2025-01-05 12:19:46,716 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\aopalliance-1.0.jar
+2025-01-05 12:19:46,716 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\guice-5.1.0.jar
+2025-01-05 12:19:46,716 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpclient-4.5.14.jar
+2025-01-05 12:19:46,716 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpcore-4.4.16.jar
+2025-01-05 12:19:46,716 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jansi-2.4.0.jar
+2025-01-05 12:19:46,716 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jcl-over-slf4j-1.7.36.jar
+2025-01-05 12:19:46,716 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-artifact-3.9.6.jar
+2025-01-05 12:19:46,716 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-builder-support-3.9.6.jar
+2025-01-05 12:19:46,717 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-compat-3.9.6.jar
+2025-01-05 12:19:46,717 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-core-3.9.6.jar
+2025-01-05 12:19:46,717 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-embedder-3.9.6.jar
+2025-01-05 12:19:46,717 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-3.9.6.jar
+2025-01-05 12:19:46,717 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-builder-3.9.6.jar
+2025-01-05 12:19:46,717 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-plugin-api-3.9.6.jar
+2025-01-05 12:19:46,717 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-repository-metadata-3.9.6.jar
+2025-01-05 12:19:46,718 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-api-1.9.18.jar
+2025-01-05 12:19:46,718 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-connector-basic-1.9.18.jar
+2025-01-05 12:19:46,718 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-impl-1.9.18.jar
+2025-01-05 12:19:46,718 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-named-locks-1.9.18.jar
+2025-01-05 12:19:46,718 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-provider-3.9.6.jar
+2025-01-05 12:19:46,718 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-spi-1.9.18.jar
+2025-01-05 12:19:46,718 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-file-1.9.18.jar
+2025-01-05 12:19:46,718 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-http-1.9.18.jar
+2025-01-05 12:19:46,719 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-wagon-1.9.18.jar
+2025-01-05 12:19:46,719 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-util-1.9.18.jar
+2025-01-05 12:19:46,719 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-3.9.6.jar
+2025-01-05 12:19:46,719 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-builder-3.9.6.jar
+2025-01-05 12:19:46,719 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-shared-utils-3.3.4.jar
+2025-01-05 12:19:46,719 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.inject-0.9.0.M2.jar
+2025-01-05 12:19:46,719 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.plexus-0.9.0.M2.jar
+2025-01-05 12:19:46,719 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-build-api-0.0.7.jar
+2025-01-05 12:19:46,719 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-cipher-2.0.jar
+2025-01-05 12:19:46,720 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-classworlds-2.7.0.jar
+2025-01-05 12:19:46,720 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-component-annotations-2.1.0.jar
+2025-01-05 12:19:46,720 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-interpolation-1.26.jar
+2025-01-05 12:19:46,720 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-sec-dispatcher-2.0.jar
+2025-01-05 12:19:46,720 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-utils-3.5.1.jar
+2025-01-05 12:19:46,720 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-file-3.5.3.jar
+2025-01-05 12:19:46,720 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-3.5.3.jar
+2025-01-05 12:19:46,720 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-shared-3.5.3.jar
+2025-01-05 12:19:46,720 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-provider-api-3.5.3.jar
+2025-01-05 12:19:46,721 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.0.0.jre [14])
+2025-01-05 12:19:46,721 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\com.google.guava_33.0.0.jre.jar
+2025-01-05 12:19:46,721 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.12 [998])
+2025-01-05 12:19:46,721 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\slf4j.api_2.0.12.jar
+2025-01-05 12:19:46,721 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20091030 [1020])
+2025-01-05 12:19:46,721 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\javax.inject_1.0.0.v20091030.jar
+2025-01-05 12:19:46,721 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20200909-1856 [1019])
+2025-01-05 12:19:46,721 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\javax.annotation_1.3.5.v20200909-1856.jar
+2025-01-05 12:19:46,721 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.6.0 [75])
+2025-01-05 12:19:46,722 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.apache.commons.cli_1.6.0.jar
+2025-01-05 12:19:46,722 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [78])
+2025-01-05 12:19:46,722 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2025-01-05 12:19:46,722 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.lang3_3.17.0 [1279])
+2025-01-05 12:19:46,722 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.apache.commons.lang3_3.17.0.jar
+2025-01-05 12:19:46,722 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [15])
+2025-01-05 12:19:46,722 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\com.google.guava.failureaccess_1.0.2.jar
+2025-01-05 12:19:46,723 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\businessdomain":
+2025-01-05 12:19:46,724 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean
+2025-01-05 12:19:46,730 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:935)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.readEnforcedJavaVersion(MavenLaunchDelegate.java:251)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.getVMInstall(MavenLaunchDelegate.java:224)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getBootpathExt(AbstractJavaLaunchConfigurationDelegate.java:363)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getVMSpecificAttributesMap(AbstractJavaLaunchConfigurationDelegate.java:679)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.getVMRunnerConfiguration(JavaLaunchDelegate.java:92)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:160)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.launch(MavenLaunchDelegate.java:133)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-05 12:19:46,736 [Worker-21: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:935)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.readEnforcedJavaVersion(MavenLaunchDelegate.java:251)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.getVMInstall(MavenLaunchDelegate.java:224)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.verifyVMInstall(AbstractJavaLaunchConfigurationDelegate.java:203)
+	at org.eclipse.jdt.launching.AbstractJavaLaunchConfigurationDelegate.getVMRunner(AbstractJavaLaunchConfigurationDelegate.java:1053)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.getVMRunner(MavenLaunchDelegate.java:154)
+	at org.eclipse.jdt.launching.JavaLaunchDelegate.launch(JavaLaunchDelegate.java:175)
+	at org.eclipse.m2e.internal.launch.MavenLaunchDelegate.launch(MavenLaunchDelegate.java:133)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:805)
+	at org.eclipse.debug.internal.core.LaunchConfiguration.launch(LaunchConfiguration.java:716)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin.buildAndLaunch(DebugUIPlugin.java:1038)
+	at org.eclipse.debug.internal.ui.DebugUIPlugin$1.run(DebugUIPlugin.java:1241)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-05 12:21:00,257 [Worker-37: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.criticalview:criticalview:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\criticalview\pom.xml.
+2025-01-05 12:22:11,730 [Worker-30: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.criticalview:criticalview:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\criticalview\pom.xml.
+2025-01-05 12:22:51,653 [Worker-34: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:935)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-05 12:23:11,688 [Worker-30: reload maven project] ERROR o.e.m.c.i.p.r.ProjectRegistryManager - Failed to read Maven project: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+org.apache.maven.project.ProjectBuildingException: Some problems were encountered while processing the POMs:
+[FATAL] Non-resolvable parent POM for com.criticalreview:businessdomain:1.0-SNAPSHOT: The following artifacts could not be resolved: com.criticalreview:criticalreview:pom:1.0-SNAPSHOT (absent): Could not find artifact com.criticalreview:criticalreview:pom:1.0-SNAPSHOT and 'parent.relativePath' points at wrong local POM @ line 5, column 10
+
+	at org.eclipse.m2e.core.internal.IMavenToolbox.readMavenProjects(IMavenToolbox.java:140)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.lambda$22(ProjectRegistryManager.java:939)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.executeBare(MavenExecutionContext.java:458)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:339)
+	at org.eclipse.m2e.core.internal.embedder.MavenExecutionContext.execute(MavenExecutionContext.java:278)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.readProjectsWithDependencies(ProjectRegistryManager.java:935)
+	at org.eclipse.m2e.core.internal.project.registry.ProjectRegistryManager.create(ProjectRegistryManager.java:219)
+	at org.eclipse.m2e.core.internal.project.registry.MavenProjectManager.create(MavenProjectManager.java:105)
+	at org.eclipse.m2e.core.ui.internal.actions.SelectionUtil.getMavenProject(SelectionUtil.java:239)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor.readMavenProject(MavenPomEditor.java:709)
+	at org.eclipse.m2e.editor.pom.MavenPomEditor$4.run(MavenPomEditor.java:1029)
+	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:63)
+2025-01-05 12:25:52,678 [Worker-1: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-01-05 12:26:28,637 [main] INFO  o.e.m2e.actions.ExecutePomAction - Creating new launch configuration
+2025-01-05 12:26:35,743 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234 [635])
+2025-01-05 12:26:35,746 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234
+2025-01-05 12:26:35,746 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\aopalliance-1.0.jar
+2025-01-05 12:26:35,746 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\guice-5.1.0.jar
+2025-01-05 12:26:35,746 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpclient-4.5.14.jar
+2025-01-05 12:26:35,746 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\httpcore-4.4.16.jar
+2025-01-05 12:26:35,746 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jansi-2.4.0.jar
+2025-01-05 12:26:35,746 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\jcl-over-slf4j-1.7.36.jar
+2025-01-05 12:26:35,747 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-artifact-3.9.6.jar
+2025-01-05 12:26:35,747 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-builder-support-3.9.6.jar
+2025-01-05 12:26:35,747 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-compat-3.9.6.jar
+2025-01-05 12:26:35,747 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-core-3.9.6.jar
+2025-01-05 12:26:35,747 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-embedder-3.9.6.jar
+2025-01-05 12:26:35,747 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-3.9.6.jar
+2025-01-05 12:26:35,747 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-model-builder-3.9.6.jar
+2025-01-05 12:26:35,747 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-plugin-api-3.9.6.jar
+2025-01-05 12:26:35,747 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-repository-metadata-3.9.6.jar
+2025-01-05 12:26:35,748 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-api-1.9.18.jar
+2025-01-05 12:26:35,748 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-connector-basic-1.9.18.jar
+2025-01-05 12:26:35,748 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-impl-1.9.18.jar
+2025-01-05 12:26:35,748 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-named-locks-1.9.18.jar
+2025-01-05 12:26:35,748 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-provider-3.9.6.jar
+2025-01-05 12:26:35,748 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-spi-1.9.18.jar
+2025-01-05 12:26:35,748 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-file-1.9.18.jar
+2025-01-05 12:26:35,748 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-http-1.9.18.jar
+2025-01-05 12:26:35,749 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-transport-wagon-1.9.18.jar
+2025-01-05 12:26:35,749 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-resolver-util-1.9.18.jar
+2025-01-05 12:26:35,749 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-3.9.6.jar
+2025-01-05 12:26:35,749 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-settings-builder-3.9.6.jar
+2025-01-05 12:26:35,749 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\maven-shared-utils-3.3.4.jar
+2025-01-05 12:26:35,749 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.inject-0.9.0.M2.jar
+2025-01-05 12:26:35,749 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\org.eclipse.sisu.plexus-0.9.0.M2.jar
+2025-01-05 12:26:35,749 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-build-api-0.0.7.jar
+2025-01-05 12:26:35,749 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-cipher-2.0.jar
+2025-01-05 12:26:35,750 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-classworlds-2.7.0.jar
+2025-01-05 12:26:35,750 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-component-annotations-2.1.0.jar
+2025-01-05 12:26:35,750 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-interpolation-1.26.jar
+2025-01-05 12:26:35,750 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-sec-dispatcher-2.0.jar
+2025-01-05 12:26:35,750 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\plexus-utils-3.5.1.jar
+2025-01-05 12:26:35,750 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-file-3.5.3.jar
+2025-01-05 12:26:35,750 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-3.5.3.jar
+2025-01-05 12:26:35,750 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-http-shared-3.5.3.jar
+2025-01-05 12:26:35,751 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.eclipse.m2e.maven.runtime_3.9.600.20231203-1234\jars\wagon-provider-api-3.5.3.jar
+2025-01-05 12:26:35,751 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava_33.0.0.jre [14])
+2025-01-05 12:26:35,752 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\com.google.guava_33.0.0.jre.jar
+2025-01-05 12:26:35,752 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=slf4j.api_2.0.12 [998])
+2025-01-05 12:26:35,752 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\slf4j.api_2.0.12.jar
+2025-01-05 12:26:35,752 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.inject_1.0.0.v20091030 [1020])
+2025-01-05 12:26:35,752 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\javax.inject_1.0.0.v20091030.jar
+2025-01-05 12:26:35,752 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=javax.annotation_1.3.5.v20200909-1856 [1019])
+2025-01-05 12:26:35,752 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\javax.annotation_1.3.5.v20200909-1856.jar
+2025-01-05 12:26:35,752 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.cli_1.6.0 [75])
+2025-01-05 12:26:35,753 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.apache.commons.cli_1.6.0.jar
+2025-01-05 12:26:35,753 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.commons-codec_1.16.0 [78])
+2025-01-05 12:26:35,753 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.apache.commons.commons-codec_1.16.0.jar
+2025-01-05 12:26:35,753 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=org.apache.commons.lang3_3.17.0 [1279])
+2025-01-05 12:26:35,753 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\org.apache.commons.lang3_3.17.0.jar
+2025-01-05 12:26:35,753 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - getClasspathEntries(Bundle=com.google.guava.failureaccess_1.0.2 [15])
+2025-01-05 12:26:35,753 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.eclipse.m2e.core.internal.Bundles - 	Entry: C:\Users\Sergio\.p2\pool\plugins\com.google.guava.failureaccess_1.0.2.jar
+2025-01-05 12:26:35,755 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.e.m.i.launch.MavenLaunchDelegate - Run build in "E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\businessdomain":
+2025-01-05 12:26:35,757 [Worker-6: Launching Executing clean in E__OneDrive_Documentos_Eclipse-workspaces_Criticalview_businessdomain] INFO  o.e.m.i.launch.MavenLaunchDelegate -  mvn  -B -Dstyle.color=always clean
+2025-01-05 12:35:56,751 [Worker-25: Creating project "businessdomain"] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.criticalview:businessdomain:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\criticalview\businessdomain\pom.xml.
+2025-01-05 12:43:41,264 [Worker-39: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:pelicula:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\pelicula\pom.xml.
+2025-01-05 12:43:43,613 [Worker-39: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /pelicula/src/main/java
+2025-01-05 12:43:43,614 [Worker-39: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /pelicula/src/main/resources
+2025-01-05 12:43:43,621 [Worker-39: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /pelicula/src/main/resources
+2025-01-05 12:43:43,627 [Worker-39: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /pelicula/src/test/java
+2025-01-05 12:43:43,628 [Worker-39: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /pelicula/src/test/resources
+2025-01-05 12:43:47,534 [Worker-39: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 8 sec
+2025-01-05 12:43:47,541 [Worker-39: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-01-05 12:43:48,085 [Worker-39: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:pelicula:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\pelicula\pom.xml.
+2025-01-05 12:43:52,574 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 12:43:52,591 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 12:43:52,598 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 12:47:19,838 [Worker-43: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:pelicula:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\pelicula\pom.xml.
+2025-01-05 12:47:20,168 [Worker-43: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /pelicula/src/main/java
+2025-01-05 12:47:20,168 [Worker-43: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /pelicula/src/main/resources
+2025-01-05 12:47:20,171 [Worker-43: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /pelicula/src/main/resources
+2025-01-05 12:47:20,173 [Worker-43: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /pelicula/src/test/java
+2025-01-05 12:47:20,174 [Worker-43: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /pelicula/src/test/resources
+2025-01-05 12:47:20,558 [Worker-43: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 0 sec
+2025-01-05 12:47:20,559 [Worker-43: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-01-05 12:47:20,845 [Worker-43: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:pelicula:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\pelicula\pom.xml.
+2025-01-05 12:47:21,672 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 12:47:21,684 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 12:47:21,689 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 12:48:29,078 [Worker-38: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.criticalview:businessdomain:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\criticalview\businessdomain\pom.xml.
+2025-01-05 12:48:32,894 [Worker-42: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.criticalview:criticalview:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\criticalview\pom.xml.
+2025-01-05 12:48:32,895 [Worker-42: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.criticalview:businessdomain:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\criticalview\businessdomain\pom.xml.
+2025-01-05 12:48:33,788 [Worker-38: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.criticalview:criticalview:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\criticalview\pom.xml.
+2025-01-05 12:48:33,790 [Worker-38: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.criticalview:businessdomain:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\criticalview\businessdomain\pom.xml.
+2025-01-05 12:48:37,528 [Worker-44: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using NULL lifecycle mapping for MavenProject: com.criticalview:businessdomain:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\criticalview\businessdomain\pom.xml.
+2025-01-05 12:49:20,980 [Worker-47: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:pelicula:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\pelicula\pom.xml.
+2025-01-05 12:49:21,514 [Worker-47: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /pelicula/src/main/java
+2025-01-05 12:49:21,515 [Worker-47: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /pelicula/src/main/resources
+2025-01-05 12:49:21,517 [Worker-47: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /pelicula/src/main/resources
+2025-01-05 12:49:21,520 [Worker-47: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /pelicula/src/test/java
+2025-01-05 12:49:21,521 [Worker-47: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /pelicula/src/test/resources
+2025-01-05 12:49:21,912 [Worker-47: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2025-01-05 12:49:21,914 [Worker-47: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-01-05 12:49:22,170 [Worker-47: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.example:pelicula:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\pelicula\pom.xml.
+2025-01-05 12:49:22,914 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 12:49:22,925 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 12:49:22,929 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 12:50:50,217 [Worker-43: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.criticalreview:pelicula:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\pelicula\pom.xml.
+2025-01-05 12:50:50,662 [Worker-43: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /pelicula/src/main/java
+2025-01-05 12:50:50,663 [Worker-43: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /pelicula/src/main/resources
+2025-01-05 12:50:50,666 [Worker-43: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /pelicula/src/main/resources
+2025-01-05 12:50:50,668 [Worker-43: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /pelicula/src/test/java
+2025-01-05 12:50:50,669 [Worker-43: Import Getting Started Content] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding resource folder /pelicula/src/test/resources
+2025-01-05 12:50:51,100 [Worker-43: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 1 sec
+2025-01-05 12:50:51,102 [Worker-43: Import Getting Started Content] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Update started
+2025-01-05 12:50:51,320 [Worker-43: Import Getting Started Content] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.criticalreview:pelicula:0.0.1-SNAPSHOT @ E:\OneDrive\Documentos\Eclipse-workspaces\Criticalview\pelicula\pom.xml.
+2025-01-05 12:50:52,040 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 12:50:52,055 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 12:50:52,059 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 12:51:05,426 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 12:51:05,429 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 12:51:05,431 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 12:52:21,980 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 12:52:21,985 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 12:52:21,989 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 12:53:29,826 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 12:53:29,842 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 12:53:29,847 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 12:54:54,958 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 12:54:54,962 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 12:54:54,965 [Worker-47: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 12:54:58,783 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 12:54:58,786 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 12:54:58,788 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 12:55:20,993 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 12:55:21,003 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 12:55:21,005 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 12:56:09,465 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 12:56:09,469 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 12:56:09,472 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 12:56:23,717 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 12:56:23,720 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 12:56:23,722 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 12:57:12,542 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 12:57:12,546 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 12:57:12,548 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 12:57:23,554 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 12:57:23,556 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 12:57:23,558 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:21:08,645 [Worker-7: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2025-01-05 20:21:25,073 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:21:25,108 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:21:25,112 [Worker-22: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:22:54,169 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:22:54,179 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:22:54,182 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:22:54,531 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:22:54,534 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:22:54,537 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:25:00,152 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:25:00,157 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:25:00,160 [Worker-3: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:25:45,175 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:25:45,179 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:25:45,181 [Worker-33: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:26:01,846 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:26:01,849 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:26:01,852 [Worker-30: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:26:16,211 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:26:16,214 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:26:16,216 [Worker-9: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:26:37,951 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:26:37,955 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:26:37,957 [Worker-0: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:28:47,243 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:28:47,247 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:28:47,250 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:29:07,009 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:29:07,012 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:29:07,015 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:29:17,867 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:29:17,869 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:29:17,871 [Worker-31: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:29:57,094 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:29:57,097 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:29:57,100 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:34:26,609 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:34:26,618 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:34:26,622 [Worker-36: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:37:18,892 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:37:18,896 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:37:18,899 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:37:19,975 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:37:19,978 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:37:19,981 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:37:31,517 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:37:31,519 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:37:31,520 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:37:42,071 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:37:42,081 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:37:42,085 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:37:48,475 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:37:48,477 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:37:48,479 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:37:51,159 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:37:51,161 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:37:51,164 [Worker-43: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:38:13,312 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:38:13,315 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:38:13,317 [Worker-8: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:39:17,092 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:39:17,099 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:39:17,103 [Worker-39: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:41:20,553 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:41:20,557 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:41:20,560 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:41:46,338 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:41:46,341 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:41:46,343 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:41:58,909 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:41:58,917 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:41:58,921 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:42:01,986 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:42:01,989 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:42:01,991 [Worker-38: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:42:07,028 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:42:07,031 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:42:07,034 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:42:39,917 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:42:39,927 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:42:39,931 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:43:43,749 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:43:43,752 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:43:43,754 [Worker-42: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:43:53,138 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:43:53,141 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:43:53,143 [Worker-45: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:46:00,716 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:46:00,720 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:46:00,722 [Worker-44: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:46:41,612 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:46:41,615 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:46:41,617 [Worker-46: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:52:54,937 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:52:54,940 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:52:54,943 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:56:15,574 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:56:15,578 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:56:15,580 [Worker-48: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 20:57:02,361 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 20:57:02,364 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 20:57:02,366 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:01:59,941 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:01:59,945 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:01:59,948 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:03:57,175 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:03:57,178 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:03:57,181 [Worker-50: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:04:13,555 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:04:13,557 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:04:13,559 [Worker-57: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:04:31,765 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:04:31,767 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:04:31,769 [Worker-58: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:05:42,138 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:05:42,141 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:05:42,143 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:09:43,862 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:09:43,865 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:09:43,868 [Worker-56: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:11:38,807 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:11:38,809 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:11:38,812 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:21:12,014 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:21:12,018 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:21:12,021 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:21:17,968 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:21:17,971 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:21:17,973 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:22:32,576 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:22:32,579 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:22:32,582 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:24:16,826 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:24:16,829 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:24:16,831 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:24:28,814 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:24:28,816 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:24:28,818 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:24:31,934 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:24:31,937 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:24:31,939 [Worker-61: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:26:26,884 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:26:26,887 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:26:26,889 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:26:29,965 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:26:29,967 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:26:29,969 [Worker-65: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:26:39,182 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:26:39,184 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:26:39,186 [Worker-63: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:26:59,699 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:26:59,702 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:26:59,704 [Worker-55: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:28:19,105 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:28:19,117 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:28:19,121 [Worker-66: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:30:59,642 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:30:59,645 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:30:59,647 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:32:18,479 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:32:18,481 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:32:18,483 [Worker-59: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:34:13,964 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:34:13,974 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:34:13,976 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:34:26,045 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:34:26,054 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:34:26,057 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:34:47,473 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:34:47,476 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:34:47,478 [Worker-64: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
+2025-01-05 21:34:58,504 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 1 resource from src\main\resources to target\classes
+2025-01-05 21:34:58,506 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\main\resources to target\classes
+2025-01-05 21:34:58,508 [Worker-69: Building] INFO  o.a.m.s.f.DefaultMavenResourcesFiltering - Copying 0 resource from src\test\resources to target\test-classes
