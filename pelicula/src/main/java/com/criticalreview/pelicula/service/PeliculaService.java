@@ -11,7 +11,7 @@ public interface PeliculaService {
 
 	Mono<Pelicula> obtenerPorId(int id);
 	
-	Mono<Pelicula> obtenerPorMedia(double media);
+	Flux<Pelicula> obtenerPorMedia(double media);
 
 	Mono<Pelicula> altaPelicula(Pelicula pelicula);
 
