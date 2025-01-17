@@ -2,7 +2,9 @@ package com.criticalreview.valoracion.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.reactive.function.client.WebClient;
 
+import com.criticalreview.valoracion.model.UsuarioDTO;
 import com.criticalreview.valoracion.model.Valoracion;
 import com.criticalreview.valoracion.repository.ValoracionRepository;
 
@@ -14,6 +16,9 @@ public class ValoracionServiceImpl implements ValoracionService {
 
     @Autowired
     private ValoracionRepository valoracionRepository;
+    
+    @Autowired
+    private WebClient.Builder webClientBuilder;
 
     @Autowired
     private ReactiveSequenceGeneratorService sequenceGeneratorService;
@@ -55,4 +60,20 @@ public class ValoracionServiceImpl implements ValoracionService {
     public Mono<Void> eliminarValoracion(int id) {
         return obtenerPorId(id).flatMap(valoracionRepository::delete);
     }
+
+    @Override
+    public Mono<UsuarioDTO> obtenerUsuarioPorValoracion(int id) {
+        return webClientBuilder
+            .baseUrl("http://microservicio-usuario/usuarios") 
+            .build()
+            .get()
+            .uri("/{id}", id) 
+            .retrieve()
+            .bodyToMono(UsuarioDTO.class);
+    }
+    
+    
+    
+    
+    
 }

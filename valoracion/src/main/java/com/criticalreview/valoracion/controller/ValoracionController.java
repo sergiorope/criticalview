@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.criticalreview.valoracion.model.UsuarioDTO;
 import com.criticalreview.valoracion.model.Valoracion;
 import com.criticalreview.valoracion.service.ValoracionService;
 
@@ -67,5 +68,16 @@ public class ValoracionController {
 				.defaultIfEmpty(ResponseEntity.notFound().build());
 
 	}
+	
+	@GetMapping(value = "valoraciones/usuario/{id}")
+	public Mono<ResponseEntity<UsuarioDTO>> obtenerUsuarioPorValoracion(@PathVariable("id") int id) {
+
+		return valoracionService.obtenerUsuarioPorValoracion(id)
+				.map(v -> ResponseEntity.ok(v))
+				.defaultIfEmpty(ResponseEntity.notFound().build());
+
+	}
+	
+	
 
 }
