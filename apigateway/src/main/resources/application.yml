@@ -1,0 +1,24 @@
+server:
+  port: 7000
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka
+spring:
+  application:
+    name: gateway
+  cloud:
+    gateway:
+      routes:
+        - id: microservicio-pelicula
+          uri: lb://microservicio-pelicula
+          predicates:
+            - Path=/peliculas/**
+        - id: microservicio-valoracion
+          uri: lb://microservicio-valoracion
+          predicates:
+            - Path=/valoraciones/**
+        - id: microservicio-usuario
+          uri: lb://microservicio-usuario
+          predicates:
+            - Path=/usuarios/**

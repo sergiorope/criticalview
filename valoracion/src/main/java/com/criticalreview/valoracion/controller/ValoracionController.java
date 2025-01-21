@@ -12,6 +12,7 @@ import org.springframework.web.bind.annotation.PutMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.criticalreview.valoracion.model.PeliculaDTO;
 import com.criticalreview.valoracion.model.UsuarioDTO;
 import com.criticalreview.valoracion.model.Valoracion;
 import com.criticalreview.valoracion.service.ValoracionService;
@@ -37,6 +38,25 @@ public class ValoracionController {
 	public Mono<ResponseEntity<Valoracion>> obtenerValoracionPorId(@PathVariable("id") int id) {
 
 		return valoracionService.obtenerPorId(id)
+				.map(v -> ResponseEntity.ok(v))
+				.defaultIfEmpty(ResponseEntity.notFound().build());
+
+	}
+	
+	@GetMapping(value = "valoraciones/usuario/{id}")
+	public Flux<ResponseEntity<Valoracion>> obtenerValoracionPorUsuarioId(@PathVariable("id") int id) {
+
+		return valoracionService.obtenerValoracionesPorUsuario(id)
+				.map(v -> ResponseEntity.ok(v))
+				.defaultIfEmpty(ResponseEntity.notFound().build());
+
+	}
+	
+	
+	@GetMapping(value = "valoraciones/pelicula/{id}")
+	public Flux<ResponseEntity<Valoracion>> obtenerValoracionPorPeliculaId(@PathVariable("id") int id) {
+
+		return valoracionService.obtenerValoracionesPorPelicula(id)
 				.map(v -> ResponseEntity.ok(v))
 				.defaultIfEmpty(ResponseEntity.notFound().build());
 
@@ -69,11 +89,27 @@ public class ValoracionController {
 
 	}
 	
-	@GetMapping(value = "valoraciones/usuario/{id}")
-	public Mono<ResponseEntity<UsuarioDTO>> obtenerUsuarioPorValoracion(@PathVariable("id") int id) {
+	@GetMapping(value = "/valoraciones/{valoracionId}/usuario")
+	public Mono<ResponseEntity<UsuarioDTO>> obtenerUsuarioPorValoracion(@PathVariable("valoracionId") int valoracionId) {
+	    return valoracionService.obtenerUsuarioPorValoracion(valoracionId)
+	            .map(u -> ResponseEntity.ok(u))
+	            .defaultIfEmpty(ResponseEntity.notFound().build());
+	}
+	
+	@GetMapping(value = "valoraciones/{valoracionId}/pelicula")
+	public Mono<ResponseEntity<PeliculaDTO>> obtenerPeliculaPorValoracion(@PathVariable("valoracionId") int id) {
 
-		return valoracionService.obtenerUsuarioPorValoracion(id)
-				.map(v -> ResponseEntity.ok(v))
+		return valoracionService.obtenerPeliculaPorValoracion(id)
+				.map(p -> ResponseEntity.ok(p))
+				.defaultIfEmpty(ResponseEntity.notFound().build());
+
+	}
+	
+	@GetMapping(value = "valoraciones/count/{peliculaId}")
+	public Mono<ResponseEntity<Long>> obtenerNumeroValoracionesPelicula(@PathVariable("peliculaId") int id) {
+
+		return valoracionService.countValoraciones(id)
+				.map(l -> ResponseEntity.ok(l))
 				.defaultIfEmpty(ResponseEntity.notFound().build());
 
 	}
