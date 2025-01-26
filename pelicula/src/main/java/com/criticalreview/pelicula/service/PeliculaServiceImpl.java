@@ -4,6 +4,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.kafka.annotation.KafkaListener;
 import org.springframework.stereotype.Service;
 import org.springframework.web.reactive.function.client.WebClient;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import com.criticalreview.pelicula.model.Pelicula;
 import com.criticalreview.pelicula.model.ValoracionDTO;
@@ -24,6 +26,8 @@ public class PeliculaServiceImpl implements PeliculaService {
     
     @Autowired
     private WebClient.Builder webClientBuilder;
+    
+    private static final Logger log = LoggerFactory.getLogger(PeliculaServiceImpl.class);
 
     @Override
     public Flux<Pelicula> obtenerPeliculas() {
@@ -46,6 +50,7 @@ public class PeliculaServiceImpl implements PeliculaService {
         return (pelicula.getId() == 0 ? sequenceGeneratorService.generateSequence(Pelicula.class.getSimpleName())
                 .map(id -> {
                     pelicula.setId(id);
+                    pelicula.setMedia(0.0);
                     return pelicula;
                 }) : Mono.just(pelicula))
                 .flatMap(peliculaRepository::save);
@@ -82,16 +87,48 @@ public class PeliculaServiceImpl implements PeliculaService {
                     .retrieve()
                     .bodyToMono(Long.class) 
                     .map(count -> {
-                     
-                        double nuevaMedia = 
-                            ((p.getMedia() * count) + valoracion.getNota()) / (count + 1);
-                        p.setMedia(nuevaMedia); 
+                        if (count == 1) { 
+                            p.setMedia(valoracion.getNota()); 
+                        } else {
+                          
+                            double nuevaMediaAgregada = p.getMedia() * (count - 1);
+                            double nuevaSumaAgregada = nuevaMediaAgregada + valoracion.getNota();
+                            p.setMedia(nuevaSumaAgregada / count);
+                        }
                         return p;
                     })
             )
-            .flatMap(peliculaRepository::save) 
+            .flatMap(peliculaRepository::save)
             .subscribe();
     }
+
+    @KafkaListener(topics = "valoracionesTopicEliminacion", groupId = "myGroup1")
+    public void gestionMediaPeliculaEliminacion(ValoracionDTO valoracion) {
+        obtenerPorId(valoracion.getPelicula_Id())
+            .flatMap(p -> 
+                webClientBuilder
+                    .baseUrl("http://microservicio-valoracion/valoraciones/count")
+                    .build()
+                    .get()
+                    .uri("/{peliculaId}", p.getId())
+                    .retrieve()
+                    .bodyToMono(Long.class) 
+                    .map(count -> {
+                        if (count == 0) {
+                            p.setMedia(0); 
+                        } else {
+                           
+                            double nuevaMediaEliminacion = p.getMedia() * (count + 1);
+                            double nuevaSumaEliminacion = nuevaMediaEliminacion - valoracion.getNota();
+                            p.setMedia(nuevaSumaEliminacion / count);
+                        }
+                        return p;
+                    })
+            )
+            .flatMap(peliculaRepository::save)
+            .subscribe();
+    }
+
 
 
 	

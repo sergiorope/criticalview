@@ -29,6 +29,9 @@ public class ValoracionServiceImpl implements ValoracionService {
 
 	@Value("${topic}")
 	String topico;
+	
+	@Value("${topicEliminacion}")
+	String topicoEliminacion;
     
     @Autowired
 	KafkaTemplate<String, Valoracion> kafkaTemplate;
@@ -104,8 +107,26 @@ public class ValoracionServiceImpl implements ValoracionService {
 
     @Override
     public Mono<Void> eliminarValoracion(int id) {
-        return obtenerPorId(id).flatMap(valoracionRepository::delete);
+        return obtenerPorId(id)
+            .doOnSuccess(v -> {
+     
+                CompletableFuture<SendResult<String, Valoracion>> futureEliminacion =
+                        kafkaTemplate.send(topicoEliminacion, v);
+
+                futureEliminacion.whenCompleteAsync((result, throwable) -> {
+                    if (throwable != null) {
+                        System.err.println("Error al enviar la valoración de eliminación al tópico: " 
+                            + throwable.getMessage());
+                    } else {
+                        System.out.println("Se ha registrado la valoración de eliminación " 
+                            + result.getProducerRecord().value().getNota() 
+                            + " en el tópico " + result.getRecordMetadata().topic());
+                    }
+                });
+            })
+            .flatMap(v -> valoracionRepository.delete(v)); 
     }
+    
 
     @Override
     public Mono<UsuarioDTO> obtenerUsuarioPorValoracion(int id) {

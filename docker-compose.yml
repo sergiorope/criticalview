@@ -1,0 +1,98 @@
+version: '3.8'
+
+services:
+  ## SERVICIO DE PELICULA ##
+  pelicula:
+    container_name: criticalview-pelicula
+    image: microservicio-pelicula
+    environment:
+      - JAVA_OPTS=-Xms256M -Xmx256M
+      - EUREKA_SERVER=http://eureka:8761/eureka/
+    ports:
+      - 8000:8000
+
+  ## SERVICIO DE VALORACION ##
+  valoracion:
+    container_name: criticalview-valoracion
+    image: microservicio-valoracion
+    environment:
+      - JAVA_OPTS=-Xms256M -Xmx256M
+      - EUREKA_SERVER=http://eureka:8761/eureka/
+    ports:
+      - 8001:8001
+
+  ## SERVICIO DE USUARIO ##
+  usuario:
+    container_name: criticalview-usuario
+    image: microservicio-usuario
+    environment:
+      - JAVA_OPTS=-Xms256M -Xmx256M
+      - EUREKA_SERVER=http://eureka:8761/eureka/
+    ports:
+      - 8002:8002
+
+  ## SERVICIO DE EUREKA ##
+  eureka:
+    container_name: criticalview-eureka
+    image: eureka
+    environment:
+      - JAVA_OPTS=-Xms256M -Xmx256M
+    ports:
+      - 8761:8761
+
+  ## SERVICIO DE APIGATEWAY ##
+  apigateway:
+    container_name: criticalview-apigateway
+    image: apigateway
+    environment:
+      - JAVA_OPTS=-Xms256M -Xmx256M
+      - EUREKA_SERVER=http://eureka:8761/eureka/
+    ports:
+      - 7000:7000
+
+  ## SERVICIO DE KAFKA ##    
+  kafka:
+    image: "bitnami/kafka:latest"
+    container_name: "kafka"
+    environment:
+      - KAFKA_ADVERTISED_LISTENERS=PLAINTEXT://kafka:9092
+      - KAFKA_BROKER_ID=1
+      - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
+      - KAFKA_LISTENERS=PLAINTEXT://:9092
+      - ALLOW_PLAINTEXT_LISTENER=yes
+    ports:
+      - 9092:9092
+    depends_on:
+      - zookeeper
+
+  ## SERVICIO DE ZOOKEEPER ##     
+  zookeeper:
+    image: "bitnami/zookeeper:latest"
+    container_name: "zookeeper"
+    environment:
+      - ALLOW_ANONYMOUS_LOGIN=yes
+    ports:
+      - "2181:2181"
+
+  ## SERVICIO DE MONGODB ##
+  mongodb:
+    container_name: criticalview-mongodb
+    image: mongo:latest
+    volumes:
+      - mongodb_data:/data/db
+    ports:
+      - 27017:27017
+
+  ## SERVICIO DE MONGO EXPRESS ##
+  mongo-express:
+    container_name: criticalview-mongo-express
+    image: mongo-express:latest
+    environment:
+      ME_CONFIG_MONGODB_SERVER: criticalview-mongodb 
+    ports:
+      - 8081:8081
+    depends_on:
+      - mongodb
+
+volumes:
+  mongodb_data:
