@@ -10,6 +10,8 @@ public interface PeliculaService {
 	
 
 	Flux<Pelicula> obtenerPeliculas();
+	
+	Flux<Pelicula> obtenerTopPeliculas();
 
 	Mono<Pelicula> obtenerPorId(int id);
 	

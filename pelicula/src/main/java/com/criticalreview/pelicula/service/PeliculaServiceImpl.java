@@ -27,11 +27,17 @@ public class PeliculaServiceImpl implements PeliculaService {
     @Autowired
     private WebClient.Builder webClientBuilder;
     
-    private static final Logger log = LoggerFactory.getLogger(PeliculaServiceImpl.class);
+
 
     @Override
     public Flux<Pelicula> obtenerPeliculas() {
         return peliculaRepository.findAll();
+    }
+    
+    @Override
+    public Flux<Pelicula> obtenerTopPeliculas() {
+        return obtenerPeliculas().sort((p1, p2) -> Double.compare(p2.getMedia(), p1.getMedia()));
+
     }
 
     @Override

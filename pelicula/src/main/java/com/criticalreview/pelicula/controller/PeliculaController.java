@@ -27,10 +27,16 @@ public class PeliculaController {
 
 
     @GetMapping(value = "/peliculas/list")
-	public ResponseEntity<Flux<Pelicula>> obtenerPeliculaso() {
+	public ResponseEntity<Flux<Pelicula>> obtenerPeliculas() {
 
 		return new ResponseEntity<>(peliculaService.obtenerPeliculas(), HttpStatus.OK);
 	}
+    
+    @GetMapping(value = "/peliculas/toplist")
+    public ResponseEntity<Flux<Pelicula>> obtenerPeliculasTop(){
+    	
+    	return new ResponseEntity<>(peliculaService.obtenerTopPeliculas(), HttpStatus.OK);
+    }
 
 
 	@GetMapping(value = "peliculas/{id}")
