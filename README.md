@@ -200,4 +200,6 @@ Ideal para sistemas con alta concurrencia y rendimiento.
 
 ⚙️ Reactor Core
 
+🐳 Docker (opcional para despliegue)
+
 🍃 MongoDB
