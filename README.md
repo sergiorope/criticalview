@@ -1,5 +1,5 @@
 🎬 Peliculas API - Sistema Reactivo de Gestión de Películas, Valoraciones y Usuarios
-Esta API REST permite gestionar películas, valoraciones y usuarios utilizando Spring WebFlux para un enfoque reactivo y no bloqueante. Ideal para aplicaciones modernas con alto rendimiento y concurrencia.
+Esta API REST permite gestionar películas, valoraciones y usuarios utilizando Spring WebFlux para un enfoque reactivo y no bloqueante. Es ideal para aplicaciones modernas que requieren alto rendimiento y manejo eficiente de concurrencia, además de integrar Apache Kafka para la actualización en tiempo real de valoraciones.
 
 🎞️ PeliculaController - Gestión de Películas
 Controlador para manejar operaciones relacionadas con películas usando programación reactiva con WebFlux.
@@ -199,6 +199,8 @@ Ideal para sistemas con alta concurrencia y rendimiento.
 🌊 Spring WebFlux
 
 ⚙️ Reactor Core
+
+🧪 Apache Kafka
 
 🐳 Docker (opcional para despliegue)
 
